@@ -45,7 +45,7 @@
                                                 rgba(160,8,156,1)51%,
                                                 rgba(99,13,178,1)100%);
     --main-color:#e6006d;
-    --font-color:#90979f;
+    --font-color:#666265;
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
                        rgba(0,0,0,0.23)0px 6px 6px;     
     --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#fff 100%);                                                          
@@ -117,12 +117,13 @@ ul.navlist{
     background: var(--gradient-color-bg);
     color: #fff;
     padding: 8px 10px;
-    border-radius: 5px;
+    border-radius: 100px;
     font-weight: 500;
     transition: all .3s ease;
 }
 
 .btn:hover,.btn-box .d-CV:hover{
+    border-radius: 100px;
     box-shadow: var(--hover-box-shadow);
 }
 
@@ -310,15 +311,8 @@ section{
     animation: floatImage 4s ease-in-out infinite;
     animation-delay: 3s;
 }
-
-.img-hero img{
-    position: relative;
-    width: 400px;
-    height: auto;
-    z-index: 10;
-}
-
 .rotate-text{
+   
     position: absolute;
     top: 4%;
     left: -53px;
@@ -328,6 +322,17 @@ section{
     overflow: hidden;
     padding: 2rem;
 }
+
+.img-hero img{
+    position: relative;
+    border-radius:48%;
+    width: 403px;
+
+    height: 472.99px;
+    z-index: 100;
+}
+
+
 
 .rotate-text span{
     position: relative;
@@ -344,7 +349,7 @@ section{
     content: "";
     position: absolute;
     inset: 20px;
-    background: #00aaff;
+    background:#e3edf7;
     border-radius: 50%;
     z-index: 1;
 }
@@ -359,16 +364,18 @@ section{
 
 
 .rotate-text .text{
+    
     position: absolute;
     width: 490px;
     height: 490px;
     background: #f2f6fb;
     border-radius: 50%;
-    box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
     animation: rotateText 30s linear infinite;
 }
 
 .text b{
+    color: var(--main-color);
     position: absolute;
     transform-origin: 0 247px;
     display: block;
@@ -386,23 +393,33 @@ section{
 }
 
 .about .about-img{
-    position: relative;
+    
+     position: relative;
 }
-
-.about .about-img .aboutHero{
-    width: 40vw;
-    height: auto;
-}
-
 .about-img .ring{
-    position: absolute;
-    top: 22%;
+    position:right ;
+    top:100%;
     right: 1%;
 }
+
+
+/* About Section Styling */
+.about-img .aboutHero {
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    animation: var(--hover-box-shadow);
+    width: 40vw;
+    height: auto;
+  }
+  
+
+
 
 .about-img .circle{
     position: absolute;
     top: 0%;
+    right: 0%;
+    
     left: 0%;
 }
 
